@@ -22,12 +22,15 @@ function calculateAge() {
 function getAge(birthdayValue) {
   //to get a current date which Date() builtin constructor is used
   let currentDate = new Date();
+  console.log(currentDate);
   //birthdate which is getting from the birthdayValue from the 8th line to get birthday Date
   let birthdayDate = new Date(birthdayValue);
+  console.log(birthdayDate);
   //logic here:
   //calculating Age from birth date - current date ;
   //.getFullYear() is a builtin method for the getting year there are lot of method like this used for getting months,mins,sec..etc,
     let age = currentDate.getFullYear()-birthdayDate.getFullYear();
+    console.log(age);
   // let month = currentDate.getMonth()-birthdayDate.getMonth(); <<--->> useless for now it is used for calculating months for Age
   //After getting iam gonna Return this age 
   return age;
